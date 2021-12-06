@@ -102,9 +102,12 @@ export function startCombat(pokemon1, pokemon2) {
     if (pokemon1.vie > 0){
         alert("VICTOIRE");
         document.getElementById("myBar2").style.width = "0%"
+        document.getElementById("endGame").innerHTML = "VICTOIRE";
     }
     else{
         alert("Defaite");
         document.getElementById("myBar").style.width = "0%"
+        document.getElementById("maSection").setAttribute("style","filter: brightness(0.1);");
+        document.getElementById("endGame").innerHTML = "DEFAITE";
     }
 }
