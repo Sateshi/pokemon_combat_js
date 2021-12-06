@@ -7,6 +7,14 @@ function pvVisuel(pokemon1,pokemon2,pv1max,pv2max){
         width1 = 1 + "%";
     if(width2 < 0)
         width2 = 1 + "%";
+    if((pokemon1.vie/pv1max) * 100 < 50)
+        elem.style.backgroundColor = "yellow";
+    if((pokemon2.vie/pv2max) * 100 < 50)
+        elem2.style.backgroundColor = "yellow";
+    if((pokemon1.vie/pv1max) * 100 < 25)
+        elem.style.backgroundColor = "#FF0000";
+    if((pokemon2.vie/pv2max) * 100 < 25)
+        elem2.style.backgroundColor = "#FF0000";
     elem.style.width = width1;
     elem2.style.width = width2;
 }
