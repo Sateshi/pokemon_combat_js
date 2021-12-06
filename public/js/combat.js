@@ -24,6 +24,8 @@ export function startCombat(pokemon1, pokemon2) {
     let i = 1;
     let pv1max = pokemon1.vie;
     let pv2max = pokemon2.vie;
+    document.getElementById("pokemon1Name").innerHTML = pokemon1.nom + " lvl " + pokemon1.niveau;
+    document.getElementById("pokemon2Name").innerHTML = pokemon2.nom + " lvl " + pokemon2.niveau;
     while (pokemon1.vie > 0 && pokemon2.vie > 0) {
         pvVisuel(pokemon1,pokemon2,pv1max,pv2max);
         choix = +prompt(`Tour ${i} : \nPoints de vie de votre ${pokemon1.nom} : ${pokemon1.vie}\n
