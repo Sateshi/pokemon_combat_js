@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 10vw;
+}
+#myProgress{
+    background-color: bisque;
+    width: 100%;
+    height : 30px;
+    border: 1px solid black;
+}
+#myProgress2{
+    background-color: bisque;
+    width: 100%;
+    height : 30px;
+    border : 1px solid black;
+}
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #04AA6D;
+}
+#myBar2 {
+    width: 1%;
+    height: 30px;
+    background-color: #04AA6D;
+}
